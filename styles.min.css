@@ -1,0 +1,37 @@
+/*!**********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/styles.css ***!
+  \**********************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap);
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/styles.css (1) ***!
+  \**************************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Martel Sans', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    width: 100%;
+    min-height: 100vh;
+    background: #ddd;
+  }
+
+  .container {
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+
+  //Responsiveness
+  @media only screen and (max-width: 48em) {
+    
+  }
+
