@@ -22,10 +22,6 @@ You can also watch for your changes by running `npm run watch`
 
 This section describes how the project is structured.
 
-## JS Modules
-
-The entrypoint of the JS module is `./src/js/app.js` this generates a js file to `./js/app.js`
-
 ## Available commands
 
 - `npm run watch` - Watch your files for changes while developing
