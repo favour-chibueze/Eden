@@ -1,6 +1,5 @@
-# Epump new website
+# Eden Work Sample
 
-This documentation describes how to setup the e-pump website for local development.
 
 ## Prerequisites
 
