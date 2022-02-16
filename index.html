@@ -24,23 +24,116 @@
         </nav>
         
         <nav class="mobile">
-            <ul>
-                <li><a href="#"><i class="fa-solid fa-calendar-days"></i> <span>Schedule</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-clock-rotate-left"></i><span>History</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-bell"></i> <span>Notification</span></a></li>
-                <li><a href="#"><i class="fa-solid fa-message"></i><span>Chat</span></a> </li>
+            <ul class="sticky-navbar">
+                <li><a href="#"><img src="/src/img/calendar-range.png" alt="calendar icon" /> <span>Schedule</span></a></li>
+                <li><a href="#"><img src="/src/img/history.png" alt="clock icon" /><span>History</span></a></li>
+                <li><a href="#"><img src="/src/img/md-notifications-outline.png" alt="notification icon" /> <span>Notification</span></a></li>
+                <li><a href="#"><img src="/src/img/message-text-outline.png" alt="message icon" /><span>Chat</span></a> </li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
-        <div class="customer-profile">
+    <main class="container">
+        <div class="profile">
             <img src="./src/img/profile.png" alt="Customer Profile picture" class="inline-block">
-            <p class="inline-block"></p>
+            <p class="inline-block">Good Morning Silm!</p>
         </div>
-    </div>
+
+        <div class="main-header-text">
+            <h1>Schedule</h1>
+            <div>
+                <button class="primary-btn">Reconfigure Services</button>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="offer">
+                <div class="primary-offer">
+                    <p>Your account is inactive. <br />
+                    <span>15% off</span> offer until June 23.</p>
+                </div>
+                <div class="secondary-offer">
+                    <p class="line-through">N75,000</p>
+                    <p>Pay N62,800</p>
+                </div>
+            </div>
+            <div class="meal-menu">
+                <div class="primary-meal-menu">
+                    <p>View your meals for the week.
+                    </p>
+                </div>
+                <div class="secondary-meal-menu" id="openModal">
+                    <p>Check ‘em</p>
+                    
+                </div>
+            </div>
+            <div class="onboarding">
+                <h1>Getting Started</h1>
+                <p>Let’s answer any questions you have left!</p>
+               <div class="setup">
+                    <div class="phone">
+                        <div class="icon-container">
+                            <img src="./src/img/phone.png" alt="phone icon">
+                        </div>
+                        <p>Set up a call with your gardener</p>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Do it
+                                        <span>
+                                            <img src="./src/img/ios-arrow-round-forward.png" alt="arrow icon">
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="play">
+                       <div class="icon-container">
+                            <img src="./src/img/play.png" alt="play icon">
+                       </div>
+                       <p>Lose yourself to this video</p>
+                            <ul>
+                                <li>
+                                    <a href="">
+                                        Play
+                                        <span>
+                                            <img src="./src/img/ios-arrow-round-forward (1).png" alt="arrow icon">
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                    </div>
+               </div>
+            </div>
+        </div>
+
+        <!-- The Modal -->
+
+        <div class="schedule">
+            <h1>Tomorrow</h1>
+            <div class="schedule-details">
+                <div class="schedule-time">
+                    <p>9 - 10am</p>
+                </div>
+                <div class="schedule-description">
+                    <p>Your cleaner is coming in to give your apartment the looks.</p>
+                </div>
+            </div>
+        </div>
+        <div class="schedule">
+                <h1>Friday, July 27</h1>
+            <div class="schedule-details">
+                <div class="schedule-time">
+                    <p>9 - 10am</p>
+                </div>
+                <div class="schedule-description search">
+                    <p>Winter? We’re getting your AC fixed</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
-    <script src="https://kit.fontawesome.com/0555842917.js" crossorigin="anonymous"></script>
+    <script src="/src/js/app.js"></script>
 </body>
 </html>
