@@ -314,14 +314,21 @@ nav.mobile ul li a span {
       transition: 0.3s;
    }
 
+   .py-2 {
+     padding-bottom: 21px;
+   }
+
    .modal-container {
+    position: relative;
+    top: 12%;
+    width: 29%;
+    margin: auto;
     background-color: #fff;
     border-radius: 20px 20px 0 0;
-    height: 765px;
     webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
-    animation-duration: 0.6s;
+    animation-duration: 0.6s;    
   }
 
 
@@ -367,7 +374,7 @@ nav.mobile ul li a span {
     display: none; 
     position: fixed;
     z-index: 1; 
-    padding-top: 120px;
+    /* padding-top: 120px; */
     left: 0;
     top: 0;
     width: 100%; 
@@ -526,5 +533,45 @@ img.modal-content {
     .onboarding {
       margin: 30px 0 30px;
     }
+
+     .modal-container {
+        height: 765px;
+        width: 100%;
+      }
     
   }
+
+
+  /* Ipad and tablet */
+
+  @media only screen 
+  and (min-width: 768px) 
+  and (max-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .container {
+      max-width: 1024px;
+    }
+
+    .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 42px;
+    grid-row-gap: 0px;
+    }
+
+    .cards .meal-menu {
+      margin-top: 0;
+    }
+
+    .modal-container {
+      top: 27%;
+      height: 100%
+    }
+
+    img.modal-content {
+    position: relative;
+    top: 13%;
+  }
+}
