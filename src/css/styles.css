@@ -397,8 +397,8 @@ img.modal-content {
 
 #img02 {
   background-color: #C6D6E4;
-   animation-name: zoomIn;
-    animation-duration: 0.30s;
+  animation-name: zoomIn;
+  animation-duration: 0.30s;
 }
 
 .out {
