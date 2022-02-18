@@ -41,12 +41,14 @@ modalSpan.onclick = function() {
     modal.classList.add("modal-hide")
     modal.classList.remove("modal-show")
     modal.querySelector(".modal-container").classList.toggle("animate-modal")
+    // modal.querySelector(".modal-container").classList.toggle("out")
+    
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
-         modal.classList.add("out")
-        // modal.style.display = "none";
+        modal.classList.add("modal-hide")
+        modal.classList.remove("modal-show")
     }
 }

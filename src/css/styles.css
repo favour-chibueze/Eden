@@ -327,11 +327,37 @@ nav.mobile ul li a span {
     border-radius: 20px 20px 0 0;  
   }
 
+  @keyframes zoom {
+    0%   {
+  /
+    transform: scale(0);
+  }
+  25%  {
+    transform: scale(0.5);
+  }
+  50%  {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100%  {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    z-index: 2;
+  }
+}
+
+
 .modal-show {
     display: block;
 }
 
-.modal-hide {
+.modal-hide, .modalImage {
   display: none;
 }
 
@@ -382,6 +408,7 @@ nav.mobile ul li a span {
     background-color: rgba(0,0,0,0.9);
 }
 
+ 
 
 /* Modal Content */
 .modal-content {
@@ -537,6 +564,11 @@ img.modal-content {
         height: 765px;
         width: 100%;
       }
+
+    img.modal-content {
+    position: relative;
+    top: 26%;
+    }
     
   }
 
