@@ -324,54 +324,53 @@ nav.mobile ul li a span {
     width: 29%;
     margin: auto;
     background-color: #fff;
-    border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;  
+  }
+
+.modal-show {
+    display: block;
+}
+
+.modal-hide {
+  display: none;
+}
+
+.animate-modal {
     webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
-    animation-duration: 0.6s;    
-  }
-
-
-  /* @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-} */
+    animation-duration: 0.6s;  
+}
 
 @keyframes zoom {
-  /* from {transform:scale(0)} 
-  to {transform:scale(1)} */
     0%   {
-    /* -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -ms-transform: scale(1); */
-    transform: scale(0)
+  /
+    transform: scale(0);
   }
   25%  {
-    transform: scale(0.5)
+    transform: scale(0.5);
   }
   50%  {
-    /* -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -o-transform: scale(2);
-    -ms-transform: scale(2); */
-    transform: scale(1)
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    transform: scale(1.5);
   }
   100%  {
-    /* -webkit-transform: scale(1);
+    -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -o-transform: scale(1);
-    -ms-transform: scale(1); */
-    transform: scale(1).5
+    -ms-transform: scale(1);
+    transform: scale(1);
+    z-index: 2;
   }
 }
 
 
-
-
 /* The Modal (background) */
 .modal, .modalImage {
-    display: none; 
+    /* display: none;  */
     position: fixed;
     z-index: 1; 
     /* padding-top: 120px; */

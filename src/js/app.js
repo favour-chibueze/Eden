@@ -31,19 +31,22 @@ modalImage.onclick = function() {
 
 // When the user clicks the button, open the modal 
 modalBtn.onclick = function() {
-    modal.style.display = "block";
+    modal.classList.add("modal-show")
+    modal.classList.remove("modal-hide")
+    modal.querySelector(".modal-container").classList.toggle("animate-modal")
 }
 
 // When the user clicks on <span> (x), close the modal
 modalSpan.onclick = function() {
-    
-    modal.style.display = "none";
+    modal.classList.add("modal-hide")
+    modal.classList.remove("modal-show")
+    modal.querySelector(".modal-container").classList.toggle("animate-modal")
 }
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
-        // modal.className += "out";
-        modal.style.display = "none";
+         modal.classList.add("out")
+        // modal.style.display = "none";
     }
 }
