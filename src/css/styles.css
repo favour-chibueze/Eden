@@ -296,6 +296,7 @@ nav.mobile ul li a span {
 
    .schedule~.schedule {
      margin-top: 15px;
+     padding-bottom: 7rem;
    }
 
    .search {
@@ -329,10 +330,17 @@ nav.mobile ul li a span {
 
   @keyframes zoom {
     0%   {
-  /
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
     transform: scale(0);
   }
   25%  {
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
     transform: scale(0.5);
   }
   50%  {
